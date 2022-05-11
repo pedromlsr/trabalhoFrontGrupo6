@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --hue: 220;
+
+  --primary-color: hsl(var(--hue), 100%, 35%);
+  --bg1-color: hsl(calc(var(--hue) - 20), 23%, 89%);
+  --brand-color: #edac94;
+  --card-bg-color: #2b2b2b;
+  --headline-color: #22262a;
+  --paragraph-color: #484f56;
+
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80");
+}
+
+form {
+  margin: auto;
+  background-color: var(--headline-color);
+  border-radius: 2rem;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 40rem;
+  font-size: 1.4rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--bg1-color);
+  font-family: 'Poppins';
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--bg1-color);
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.input-container {
+  height: 5rem;
+  position: relative;
+  width: 100%;
+}
+
+.ic {
+  margin-top: 3rem;
+}
+
+.input {
+  background-color: var(--bg1-color);
+  border-radius: 1.2rem;
+  border: 0;
+  box-sizing: border-box;
+  color: var(--headline-color);
+  font-family: 'Poppins';
+  font-size: 1.8rem;
+  height: 100%;
+  outline: 0;
+  padding: 0.4rem 2rem 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: var(--headline-color);
+  border-radius: 1rem;
+  height: 2rem;
+  left: 2rem;
+  position: absolute;
+  top: -2rem;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 100%;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(.8rem);
+}
+
+.placeholder-form {
+  color: var(--paragraph-color);
+  font-family: 'Poppins';
+  left: 2rem;
+  line-height: 1.4rem;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 2rem;
+}
+
+.input:focus ~ .placeholder-form,
+.input:not(:placeholder-shown) ~ .placeholder-form {
+  transform: translateY(-3rem) translateX(1rem) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder-form {
+  color: var(--bg1-color);
+}
+
+.input:focus ~ .placeholder-form {
+  color: var(--brand-color);
+}
+
+.checkbox {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.checkbox-text {
+  color: var(--bg1-color);
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.submit {
+  background-color: var(--primary-color);
+  border-radius: 1.2rem;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Poppins';
+  height: 5rem;
+  margin-top: 3rem;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:hover {
+  background-color: var(--headline-color);
+  color: var(--brand-color);
+  filter: brightness(1.3);
+}
