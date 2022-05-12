@@ -21,7 +21,7 @@ body {
 #silhoutte {
     position: absolute;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 #silhoutte2 {
@@ -39,7 +39,7 @@ body {
 }
 
 #flare {
-    position:absolute;
+    position: absolute;
     mix-blend-mode: lighten;
     height: 100%;
     width: 100%;
@@ -57,11 +57,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     padding: 5% 0;
-    background: linear-gradient(to bottom,#000000,#333);
+    background: linear-gradient(to bottom, #000000, #333, #000000);
 }
 
+.containerSlider h2{
+    width: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+}
 
 .containerSlider .carousel {
     margin: 0;
@@ -101,22 +110,24 @@ body {
 
 .main-btn {
     margin-bottom: 20rem;
-    background-color: #039ef898;
+    background-color: transparent;
     color: #fff;
+    font-weight: bolder;
     text-decoration: none;
     text-transform: uppercase;
     width: 10rem;
     height: 4rem;
     padding: 1rem 2rem;
-    border-radius: 2rem;
-    border: 3px solid transparent;
+    color: #fff;
+    border-left: #fff 3px solid;
+    border-bottom: #fff 3px solid;
     transition: .5s;
 }
 
 .main-btn:hover {
+    border: none;
     color: #fff;
-    background-color: transparent;
-    border-color: #039ef8;
+    background-color: #039ef8;
 }
 
 .carousel-indicators {
@@ -159,13 +170,165 @@ body {
     }
 }
 
-/* NavBar*/
+/* Social links */
 
-.navBar {
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(235, 10, 10);
-    z-index: 9999;
-    inset: 0;
+.social-links {
+    position: relative;
+    display: flex;
+    flex-direction: row;
 }
+
+.social-links article,
+.social-links article+article+article {
+    background-color: #cccccc;
+    padding: 1rem 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.social-links article+article {
+    background-color: #f7f5f5;
+    width: 100%;
+    height: auto;
+}
+
+.social-links article header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: rgba(51, 51, 51, 0.493) solid 0.5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.social-links article header a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.social-links article .time {
+    color: #333;
+    font-weight: bold;
+}
+
+.social-links article p {
+    margin: 10% 0;
+    text-decoration: none;
+    color: #000000;
+}
+
+.social-links article p+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.social-links article p+a:hover {
+    color: #039ef8;
+}
+
+    /* Upcoming-shows */
+
+    .upcoming-shows {
+        padding: 10%;
+        height: 100vh;
+        position: relative;
+        background-image: url("../img/parallax_img/smoke.png");
+    }
+
+    .upcoming-shows-table {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+    }
+
+    .upcoming-shows-title {
+        display: flex;
+    }
+
+    .upcoming-shows h2 {
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        margin-bottom: 1.5rem;
+        color: #fff;
+
+    }
+
+    .upcoming-shows h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        text-align: end;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #039ef8;
+        margin: 0;
+    }
+
+    .upcoming-shows h3:hover {
+        cursor: pointer;
+        color: #38b4fc;
+        text-decoration: underline;
+    }
+
+    .upcoming-shows-table table {
+        width: 100%;
+        height: 90%;
+    }
+
+    .upcoming-shows-table table thead {
+        font-size: 20px;
+        font-weight: bolder;
+        height: 3rem;
+        border-top: #fff solid 1px;
+
+    }
+
+    .upcoming-shows-table table tbody td {
+        border-top: #fff solid 1px;
+        height: 5rem;
+    }
+
+    .upcoming-shows-table .data p {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .upcoming-shows-table .data p+p {
+        margin: 0;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .upcoming-shows-table button {
+        height: 2rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        border-left: #fff 2px solid;
+        border-bottom: #fff 2px solid;
+        transition: .5s;
+    }
+
+    .upcoming-shows-table button:hover {
+        border: none;
+        background-color: #039ef8;
+
+    }
+
+    /* NavBar*/
+
+    .navBar {
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        background-color: #333;
+        z-index: 9999;
+        inset: 0;
+    }
