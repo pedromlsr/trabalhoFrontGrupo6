@@ -4,25 +4,13 @@ body {
 
 /* Parallax */
 
-.parallax {
-    min-height: 30rem;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10%;
+.home-parallax{
+    height: 800px;
 }
 
-.parallax::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    background: linear-gradient(to top, #333, transparent);
-}
 #background-parallax {
-    position:absolute;
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
 }
@@ -35,11 +23,9 @@ body {
 
 #silhoutte2{
     position:absolute;
-    top: 10rem;
+    top: 12rem;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-
 }
 
 
@@ -50,13 +36,21 @@ body {
 
 /* Carousel */
 
-#mainSlider .carousel-inner,
-#mainSlider .carousel-item {
-    margin-top: 20%;
-    height: 70vh;
+.tour::before{
+    background: linear-gradient(to top,#333,transparent);
+}
+.tour .containerSlider {
+    width: 100%;
 }
 
-.carousel-item img {
+.containerSlider .carousel{
+    padding: 100px 50px !important;
+    margin: 0 auto;
+    background-color: #333333;
+}
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
     height: 100%;
 }
 
@@ -104,6 +98,10 @@ body {
     border-color: #039ef8;
 }
 
+.carousel-indicators{
+    bottom: 13% !important;
+}
+
 .carousel-indicators .active {
     background-color: #039ef8;
 }
@@ -137,4 +135,15 @@ body {
         font-size: 1rem;
         margin-bottom: 10%;
     }
+}
+
+/* NavBar*/
+
+.navBar {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    z-index: 9999;
+    inset: 0;
 }
