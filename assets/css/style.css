@@ -26,14 +26,14 @@ nav.scroll {
 }
 
 nav p {
-	margin:0;
+	margin: 0;
 }
 
 nav ul {
 	list-style: none;
 	display: flex;
 	gap: 1rem;
-	margin:0;
+	margin: 0;
 
 }
 
@@ -41,6 +41,41 @@ nav ul li a {
 	text-decoration: none;
 	color: white;
 }
+
+/* Navigation*/
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 3rem;
+	z-index: 9999;
+	inset: 0;
+	color: white;
+	font-size: 1rem;
+	font-weight: 700;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav.scroll {
+	background-color: #333;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+}
+
+
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
 
 /* Parallax */
 
@@ -366,27 +401,27 @@ footer {
 
 /* Back to top button */
 
-	#backToTopButton circle {
-			fill: #333;
-	}
+#backToTopButton circle {
+	fill: #333;
+}
 
-	#backToTopButton {
-			position: fixed;
-			bottom: 1rem;
-			right: 2.5rem;
+#backToTopButton {
+	position: fixed;
+	bottom: 1rem;
+	right: 2.5rem;
 
-			opacity: 0;
-			visibility: hidden;
+	opacity: 0;
+	visibility: hidden;
 
-			transform: translateY(100%);
-			transition: 200ms;
-	}
+	transform: translateY(100%);
+	transition: 200ms;
+}
 
-	#backToTopButton.show {
-			opacity: 1;
-			visibility: visible;
-			transform: translateY(0);
-	}
+#backToTopButton.show {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
 
 /* Responsive */
 
@@ -428,6 +463,7 @@ footer {
 		width: 90%;
 		font-size: 1rem;
 	}
+
 	.carousel-indicators {
 		margin: 0;
 	}
@@ -464,5 +500,4 @@ footer {
 		font-size: 0.8rem;
 	}
 
-	
 }
