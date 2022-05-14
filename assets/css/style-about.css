@@ -1,0 +1,277 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #22262a85;
+  width: 20rem;
+  height: 28.125rem;
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 1px #ffffff;
+}
+.imagem {
+  display: flex;
+  justify-content: center;
+}
+.foto-pessoa {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%;
+  margin-top: 1.25rem;
+}
+.nome {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.563rem;
+  font-family: "Poppins";
+}
+.texto {
+  display: flex;
+}
+.text-main {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+  color: #a2b2c2;
+  font-weight: 200;
+  font-size: 0.938rem;
+  font-family: "Poppins";
+}
+.container .card .foto-pessoa {
+  position: absolute;
+  top: 32%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  transition: 0.5s;
+}
+.container .card:hover .foto-pessoa {
+  top: 0%;
+  transform: translateY(0%);
+}
+.container .card .foto-pessoa img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 16.875rem;
+}
+.container .card .nome {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6.25rem;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+.container .card:hover .nome {
+  height: 13.125rem;
+  transform: translateY(-1.875rem);
+}
+.container .card .nome .text-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  transition: 0.5s;
+  opacity: 1;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.container .card:hover .nome .text-main {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.2s;
+}
+.container .card .nome .text-main {
+  text-align: center;
+  display: inline-block;
+  margin: 0.313rem;
+  transition: 0s;
+  color: #a2b2c2;
+  border-radius: 0.25;
+  cursor: pointer;
+}
+.container .card .text-main {
+  text-align: center;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.25rem;
+  margin-top: 0.625rem;
+  text-decoration: none;
+  color: #a2b2c2;
+  opacity: 0;
+  transform: translateY(3.125rem);
+  transition: 0.5s;
+  margin-top: 0;
+}
+.container .card:hover .text-main {
+  opacity: 1;
+  transform: translateY(0rem);
+  transition-delay: 0s;
+  text-align: center;
+}
+.card:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.4s ease;
+  box-shadow: 0px 0px 10px 5px #ffffff;
+}
+
+/* Fabiano */
+.separador {
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  align-items:center;
+  margin: 5rem 0;
+}
+
+.separador > img {
+  position: absolute;
+}
+
+.line {
+  margin-top: 0.7rem;
+  width: 100%;
+}
+
+.insp-top-title{
+  position: relative;
+  font-family: 'Special Elite', cursive;
+  margin-top: 2rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight:lighter;
+}
+
+.insp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inspirations {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.inspiration{
+  width: 300px;
+  height: 300px;
+  background-color: #333;
+  border-radius: 10px;
+  outline: 1px solid #ffffff80;
+  outline-offset: -8px;
+  box-shadow: 0px 0px 10px 1px #ffffff;;
+  position: relative;
+  overflow: hidden; 
+  margin: auto;
+}
+
+.insp-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .6;
+  transition: transform .75s;
+  cursor: pointer;
+}
+
+.inspiration:hover .insp-image {
+  transform: scale(1.15);
+}
+
+.inspiration:hover {
+  box-shadow: 0px 0px 10px 5px #ffffff;
+}
+
+.insp-title {
+  font-family: Poppins;
+  color: #f0e8e9;
+  position: absolute;
+  left: 1.5rem;
+  bottom: 0.1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 0 0 2px #000000;
+}
+
+.insp-text {
+  display: none;
+  font-family:'Courier New', Courier, monospace;
+  color: #cae6f4;
+  position: relative;
+  margin: auto;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 0 2px #000000;
+  border-radius:5px;
+}
+
+.inspiration:hover .insp-text {
+  display:flex;
+}
+
+button {
+  border: none;
+  margin: none;
+  padding: none;
+  height: 75%;
+  mix-blend-mode: hard-light;
+  background-color: #ffffff00;
+  border-radius: .5rem;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+
+/* MediaQuery Larissa */
+@media screen and (max-width: 992px) {
+  .card:hover .foto-pessoa {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card:hover .texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card:hover .nome {
+    text-align: center;
+    width: 80%;
+  }
+  .container .card:hover .nome {
+    height: 17rem;
+    transform: translateY(-5rem);
+  }
+}
