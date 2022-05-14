@@ -4,6 +4,14 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #000000;
+  margin: 1rem;
+}
+
+.bg-master {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  opacity: 0.15;
 }
 
 .container {
@@ -13,16 +21,18 @@ body {
   gap: 2.2rem;
   width: 80%;
   margin: auto;
-  flex-wrap: wrap;
 }
 .card {
-  background-color: #22262a85;
+  background-color: #22262a73;
   width: 20rem;
   height: 28.125rem;
   position: relative;
   border-radius: 1.25rem;
   overflow: hidden;
   box-shadow: 0px 0px 10px 1px #ffffff;
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+  transform: perspective(800px);
 }
 .imagem {
   display: flex;
@@ -50,7 +60,7 @@ body {
   text-align: center;
   transition: 1s;
   z-index: 10;
-  color: #a2b2c2;
+  color: #ffffff;
   font-weight: 200;
   font-size: 0.938rem;
   font-family: "Poppins";
@@ -107,7 +117,7 @@ body {
   display: inline-block;
   margin: 0.313rem;
   transition: 0s;
-  color: #a2b2c2;
+  color: #ffffff;
   border-radius: 0.25;
   cursor: pointer;
 }
@@ -118,7 +128,7 @@ body {
   border-radius: 0.25rem;
   margin-top: 0.625rem;
   text-decoration: none;
-  color: #a2b2c2;
+  color: #cad4de;
   opacity: 0;
   transform: translateY(3.125rem);
   transition: 0.5s;
@@ -159,24 +169,23 @@ body {
 .insp-top-title{
   position: relative;
   font-family: 'Special Elite', cursive;
-  margin-top: 2rem;
   color: #ffffff;
   text-align: center;
   font-weight:lighter;
+  margin-bottom: 2rem;
 }
 
 .insp-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  width: 100%;
 }
 
 .inspirations {
   display: flex;
-  gap: 3rem;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: space-between;
-  justify-content: space-around;
+  gap: 2.2rem;
   width: 80%;
   margin: auto;
 }
@@ -218,7 +227,7 @@ body {
   color: #f0e8e9;
   position: absolute;
   left: 1.5rem;
-  bottom: 0.1rem;
+  bottom: 0.5rem;
   font-size: 1.2rem;
   text-align: center;
   text-shadow: 0 0 2px #000000;
@@ -253,11 +262,21 @@ button {
   transition: .2s ease-in-out;
 }
 
+@media screen and (max-width: 1319px) {
+  .container{
+    width: 90%;
+  }
+}
 
-/* MediaQuery Larissa */
-@media screen and (max-width: 992px) {
-  .card:hover .foto-pessoa {
+@media screen and (max-width: 1176px) {
+  .bg-master {
     display: none;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .inspirations{
+    width: 85%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -272,6 +291,27 @@ button {
   }
   .container .card:hover .nome {
     height: 17rem;
-    transform: translateY(-5rem);
+    transform: translateY(-0.3rem);
+  }
+
+  @media screen and (max-width: 280px){
+    .container-master {
+      width: 98%;
+    }
+
+    .container .card:hover .nome {
+      height: 17rem;
+      transform: translateY(-8.5rem);
+    }
+
+    .container .card:hover .foto-pessoa{
+      display: none
+    }
+
+    .inspiration .insp-title {
+      bottom: 1rem;
+      font-size: 1rem;
+      text-align: center;
+    }
   }
 }
