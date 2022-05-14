@@ -26,64 +26,78 @@
   <body>
     <header>
       <nav id="navigation">
-        <p>Banda</p>
+        <div class="logo-nav-left">
+          <img src="./assets/img/logo_img/logo-simple.png" alt="" />
+        </div>
+        <div class="logo-nav-right">
+          <img src="./assets/img/logo_img/logo-simple.png" alt="" />
+        </div>
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../pages/about.html">Sobre</a></li>
+          <li><a href="#content">Contato</a></li>
         </ul>
       </nav>
     </header>
 
     <div id="content">
-      <form action="#" method="post">
-        <div class="title">Siga nossa banda!</div>
-        <div class="subtitle">
-          Assine nossa newsletter e acompanhe nossos lançamentos e turnês
-        </div>
-        <div class="input-container ic">
-          <input
-            id="firstname"
-            class="input"
-            type="text"
-            placeholder=" "
-            pattern="[A-Za-z].{2,}"
-            title="OIIII"
-            required
-          />
-          <div class="cut"></div>
-          <label for="firstname" class="placeholder-form">Nome</label>
-        </div>
-        <div class="input-container ic">
-          <input
-            id="lastname"
-            class="input"
-            type="text"
-            placeholder=" "
-            pattern="[A-Za-z]{#}"
-            required
-          />
-          <div class="cut"></div>
-          <label for="lastname" class="placeholder-form">Sobrenome</label>
-        </div>
-        <div class="input-container ic">
-          <input
-            id="email"
-            class="input"
-            type="text"
-            placeholder=" "
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            required
-          />
-          <div class="cut"></div>
-          <label for="email" class="placeholder-form">Seu melhor email</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" checked />
-          <div class="checkbox-text">Desejo receber emails diariamente</div>
-        </div>
-        <button type="text" class="submit">Assinar!</button>
-      </form>
+      <div class="wrapper">
+        <form action="#" method="post">
+          <div>
+            <img
+              class="logo-form"
+              src="./assets/img/logo_img/logo-simple.png"
+              alt=""
+            />
+          </div>
+          <div class="title">Siga nossa banda!</div>
+          <div class="subtitle">
+            Assine nossa newsletter e acompanhe nossos lançamentos e turnês
+          </div>
+          <div class="input-container ic">
+            <input
+              id="firstname"
+              class="input"
+              type="text"
+              placeholder=" "
+              pattern="[A-Za-z].{2,}"
+              title="OIIII"
+              required
+            />
+            <div class="cut"></div>
+            <label for="firstname" class="placeholder-form">Nome</label>
+          </div>
+          <div class="input-container ic">
+            <input
+              id="lastname"
+              class="input"
+              type="text"
+              placeholder=" "
+              pattern="[A-Za-z]{#}"
+              required
+            />
+            <div class="cut"></div>
+            <label for="lastname" class="placeholder-form">Sobrenome</label>
+          </div>
+          <div class="input-container ic">
+            <input
+              id="email"
+              class="input"
+              type="text"
+              placeholder=" "
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+            <div class="cut"></div>
+            <label for="email" class="placeholder-form">Seu melhor email</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" checked />
+            <div class="checkbox-text">Desejo receber emails diariamente</div>
+          </div>
+          <button type="text" class="submit">Assinar!</button>
+        </form>
+      </div>
     </div>
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
@@ -259,31 +273,33 @@
     </footer>
     <!-- Footer -->
 
-    <a id="backToTopButton" href="#navigation"
-      ><svg
-        width="40"
-        height="40"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle cx="20" cy="20" r="20" fill="#00856F" />
-        <path
-          d="M20 27V13"
-          stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M13 20L20 13L27 20"
-          stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </a>
+    <div>
+      <a id="backToTopButton" href="#content"
+        ><svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="20" cy="20" r="20" fill="#00856F" />
+          <path
+            d="M20 27V13"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M13 20L20 13L27 20"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
