@@ -203,7 +203,20 @@ nav ul li a {
 }
 
 /* Carousel */
-
+.nome-banda {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.nome-banda img{
+	width: 50%;
+	height:50%;
+}
+.nome-banda h1{
+	text-align: center;
+	color: #fff;
+	margin: auto;
+	font-family: 'Special Elite', cursive;
+}
 .containerSlider {
 	position: relative;
 	display: flex;
@@ -212,7 +225,7 @@ nav ul li a {
 	flex-direction: column;
 	width: 100%;
 	padding: 5% 0;
-	border-top: 2px solid white;
+	border-top: 2px solid #ffffff;
 	background-image: url("../img/parallax_img/smoke.png");
 }
 
