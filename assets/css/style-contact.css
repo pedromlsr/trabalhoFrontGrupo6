@@ -59,12 +59,6 @@ nav .logo-nav-right img {
   transform: rotate(-90deg);
 }
 
-nav.scroll .logo-nav-left img {
-}
-
-nav.scroll .logo-nav-right img {
-}
-
 nav ul {
   list-style: none;
   display: flex;
