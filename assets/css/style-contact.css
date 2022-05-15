@@ -341,11 +341,6 @@ justify-content: center;
   display: block;
 }
 
-input.invalid {
-  border-color: red;
-  color: red;
-}
-
 /* Footer */
 
 footer {
