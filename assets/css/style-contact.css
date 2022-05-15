@@ -114,9 +114,8 @@ nav ul li a {
 	/* padding: 0; */
 }
 
-.dropdown {
+.dropdown, .list-dropdown {
 	display: none;
-	height: 100%;
 }
 
 .dropdown-content {
@@ -403,16 +402,12 @@ footer .link-sections {
       width: 100%;
       padding-inline: 0.8rem;
     }
-  
-    .nav-menu a {
-      padding: 0.8rem
-    }
-  
+        
     .nav-menu .inicio {
       display: none;
     }
   
-    .dropdown {
+    .dropdown, .list-dropdown {
       display: block;
     }
   
@@ -435,10 +430,6 @@ footer .link-sections {
       display: none;
     }
   }
-
-    .nav-menu {
-      width: 90%;
-    }
 
     @media screen and (max-width: 600px) {
       .wrapper {
