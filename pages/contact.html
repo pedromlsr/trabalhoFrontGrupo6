@@ -27,33 +27,84 @@
       <header>
          <nav id="navigation">
             <div class="logo-nav-left">
-               <img src="./assets/img/logo_img/logo-simple.png" alt="" />
+               <img src="../assets/img/util_img/logo-separate.png" />
             </div>
             <div class="logo-nav-right">
-               <img src="./assets/img/logo_img/logo-simple.png" alt="" />
+               <img src="../assets/img/util_img/logo-separate.png" />
             </div>
-            <ul>
-               <li><a href="../index.html">Início</a></li>
-               <li><a href="../pages/about.html">Sobre</a></li>
-               <li><a href="#content">Contato</a></li>
-            </ul>
+            <div class="nav-menu">
+               <ul>
+                  <li class="inicio">
+                     <a class="link-sections" href="#home">Início</a>
+                  </li>
+                  <li><a class="link-sections" href="#tour">Tour</a></li>
+                  <li><a class="link-sections" href="#shows">Shows</a></li>
+                  <li class="about">
+                     <a class="link-sections" href="./pages/about.html"
+                        >Sobre</a
+                     >
+                  </li>
+                  <li class="contact">
+                     <a class="link-sections" href="./pages/contact.html"
+                        >Contato</a
+                     >
+                  </li>
+                  <li><a class="link-sections" href="#footer">Mídias</a></li>
+                  <li>
+                     <div class="dropdown">
+                        <a class="hamburger-menu" href="#dropdown-content">
+                           <img
+                              src="../assets/img/util_img/h-menu.png"
+                              alt="Menu Hambúrguer"
+                           />
+                        </a>
+                        <div class="dropdown-content">
+                           <ul class="list-dropdown">
+                              <li>
+                                 <a class="link-dropdown" href="#home"
+                                    >Início</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    class="link-dropdown"
+                                    href="./pages/about.html"
+                                    >Sobre</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    class="link-dropdown"
+                                    href="./pages/contact.html"
+                                    >Contato</a
+                                 >
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
          </nav>
       </header>
 
       <div id="content">
          <div class="wrapper">
-            <form action="#" method="post">
+            <form action="#content" method="post">
                <div>
                   <img
                      class="logo-form"
-                     src="./assets/img/logo_img/logo-simple.png"
+                     src="../assets/img/util_img/logo-separate.png"
                      alt=""
                   />
                </div>
-               <div class="title">Siga nossa banda!</div>
+               <div class="title">
+                  <!-- Siga nossa banda! -->Junte-se a nós!
+               </div>
                <div class="subtitle">
-                  Assine nossa newsletter e acompanhe nossos lançamentos e
-                  turnês
+                  <!-- Assine nossa newsletter e acompanhe nossos lançamentos e
+                  turnês -->Assine para nos acompanhar nesta batalha contra o
+                  abominável Galaxy Fold
                </div>
                <div class="input-container ic">
                   <input
@@ -106,9 +157,14 @@
             </form>
          </div>
       </div>
+
       <!-- Footer -->
-      <footer class="bg-dark text-center text-white">
-         <img class="logo-footer" src="./assets/img/logo_img/logo.png" alt="" />
+      <footer id="footer" class="bg-dark text-center text-white">
+         <img
+            class="logo-footer"
+            src="../assets/img/logo_img/logo.png"
+            alt=""
+         />
 
          <!-- Grid container -->
          <div class="container p-4">
@@ -121,7 +177,7 @@
                   role="button"
                   ><i class="fab fa-facebook-f"
                      ><img
-                        src="./assets/img/icons_social/facebook.png"
+                        src="../assets/img/icons_social/facebook.png"
                         alt="" /></i
                ></a>
 
@@ -132,18 +188,18 @@
                   role="button"
                   ><i class="fab fa-twitter"
                      ><img
-                        src="./assets/img/icons_social/twitter.png"
+                        src="../assets/img/icons_social/twitter.png"
                         alt="" /></i
                ></a>
 
-               <!-- Google -->
+               <!-- Spotify -->
                <a
                   class="btn btn-outline-light btn-floating m-1"
                   href="#!"
                   role="button"
                   ><i class="fab fa-spotify"
                      ><img
-                        src="./assets/img/icons_social/spotify.png"
+                        src="../assets/img/icons_social/spotify.png"
                         alt="" /></i
                ></a>
 
@@ -154,50 +210,43 @@
                   role="button"
                   ><i class="fab fa-instagram"
                      ><img
-                        src="./assets/img/icons_social/instagram.png"
+                        src="../assets/img/icons_social/instagram.png"
                         alt="" /></i
                ></a>
 
-               <!-- Linkedin -->
+               <!-- Youtube -->
                <a
                   class="btn btn-outline-light btn-floating m-1"
                   href="#!"
                   role="button"
                   ><i class="fab fa-youtube"
                      ><img
-                        src="./assets/img/icons_social/youtube.png"
+                        src="../assets/img/icons_social/youtube.png"
                         alt="" /></i
                ></a>
 
-               <!-- Github -->
+               <!-- Whatsapp -->
                <a
                   class="btn btn-outline-light btn-floating m-1"
                   href="#!"
                   role="button"
                   ><i class="fab fa-whatsapp"
                      ><img
-                        src="./assets/img/icons_social/whatsapp.png"
+                        src="../assets/img/icons_social/whatsapp.png"
                         alt="" /></i
                ></a>
             </section>
-            <!-- Section: Social media -->
 
-            <!-- Section: Form -->
-            <section class="">
-               <form action="">
-                  <!--Grid row-->
+            <section class="footer-form">
+               <form>
                   <div class="row d-flex justify-content-center">
-                     <!--Grid column-->
                      <div class="col-auto">
                         <p class="pt-2">
                            <strong>Assine nossa newsletter</strong>
                         </p>
                      </div>
-                     <!--Grid column-->
 
-                     <!--Grid column-->
                      <div class="col-md-5 col-12">
-                        <!-- Email input -->
                         <div class="form-outline form-white mb-4">
                            <input
                               type="email"
@@ -207,11 +256,7 @@
                            />
                         </div>
                      </div>
-                     <!--Grid column-->
-
-                     <!--Grid column-->
                      <div class="col-auto">
-                        <!-- Submit button -->
                         <button
                            type="submit"
                            class="btn btn-outline-light mb-4"
@@ -219,84 +264,43 @@
                            Assinar!
                         </button>
                      </div>
-                     <!--Grid column-->
                   </div>
-                  <!--Grid row-->
                </form>
             </section>
-            <!-- Section: Form -->
 
-            <!-- Section: Links -->
-            <section class="">
-               <!--Grid row-->
-               <div class="row">
-                  <!--Grid column-->
+            <section class="footer-social-links">
+               <div class="row mt-4 mb-4">
                   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                     <h5 class="text-uppercase">Links</h5>
-
-                     <ul class="list-unstyled mb-0">
-                        <li>
-                           <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                     </ul>
+                     <a class="link-sections" href="../index.html">Início</a>
                   </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
                   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                     <h5 class="text-uppercase">Links</h5>
-
-                     <ul class="list-unstyled mb-0">
-                        <li>
-                           <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                     </ul>
+                     <a class="link-sections" href="../index.html #tour"
+                        >Tour</a
+                     >
                   </div>
-                  <!--Grid column-->
 
-                  <!--Grid column-->
                   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                     <h5 class="text-uppercase">Links</h5>
-
-                     <ul class="list-unstyled mb-0">
-                        <li>
-                           <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                     </ul>
+                     <a class="link-sections" href="../index.html #shows"
+                        >Shows</a
+                     >
                   </div>
-                  <!--Grid column-->
 
-                  <!--Grid column-->
                   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                     <h5 class="text-uppercase">Links</h5>
-
-                     <ul class="list-unstyled mb-0">
-                        <li>
-                           <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                     </ul>
+                     <a class="link-sections" href="./pages/about.html"
+                        >Sobre</a
+                     >
                   </div>
-                  <!--Grid column-->
                </div>
-               <!--Grid row-->
             </section>
-            <!-- Section: Links -->
          </div>
-         <!-- Grid container -->
 
-         <!-- Copyright -->
-         <div
-            class="text-center p-3"
-            style="background-color: rgba(0, 0, 0, 0.2)"
-         >
+         <div class="text-center p-3" style="background-color: #00000033">
             © 2020 Copyright:
             <a class="text-white" href="https://mdbootstrap.com/"
                >MDBootstrap.com</a
             >
          </div>
-         <!-- Copyright -->
       </footer>
-      <!-- Footer -->
 
       <div>
          <a id="backToTopButton" href="#content"
