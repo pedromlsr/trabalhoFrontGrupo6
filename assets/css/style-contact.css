@@ -27,14 +27,19 @@ nav {
   opacity: 0.9;
 }
 
-.link-sections {
+.link-sections,
+.link-dropdown {
 	color: #ffffff;
 	font-size: 1.28rem;
 	font-weight: 700;
 	text-decoration: none;
 }
 
-.link-sections:hover {
+
+.link-sections:hover,
+.link-dropdown:hover,
+.hamburger-menu img:hover {
+  color: #ffffff;
 	opacity: 0.5;
 }
 

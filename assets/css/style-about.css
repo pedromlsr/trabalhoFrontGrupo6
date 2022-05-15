@@ -27,13 +27,16 @@ nav {
 	/* text-decoration: none; */
 }
 
-.link-sections {
+.link-sections,
+.link-dropdown {
 	color: #ffffff;
 	font-size: 0.8rem;
 	font-weight: 700;
 	text-decoration: none;
 }
 
+.link-dropdown:hover,
+.hamburger-menu img:hover,
 .link-sections:hover {
 	color: #ffffff;
 	opacity: 0.5;
@@ -428,6 +431,7 @@ button {
 footer {
 	border-top: 2px solid white;
   margin-top: 7rem;
+  box-shadow: 0 0 0.5rem white;
 }
 
 .logo-footer {
