@@ -21,3 +21,22 @@ function showBackToTopButtonOnScroll() {
     backToTopButton.classList.remove('show')
   }
 }
+
+const submit = document.getElementById("submit");
+
+submit.addEventListener("click", validar);
+
+function validar(e) {
+
+  const firstNameField = document.getElementById("firstname");
+  let valid = true;
+
+  if (!firstNameField.value) {
+    const nameError = document.getElementById("nameError");
+    nameError.classList.add("visible");
+    firstNameField.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  }
+  return valid;
+}

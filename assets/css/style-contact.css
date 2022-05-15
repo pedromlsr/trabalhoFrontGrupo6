@@ -328,6 +328,24 @@ justify-content: center;
   opacity: 0.5;
 }
 
+#nameError {
+  display: none;
+  font-size: 1.5rem;
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+}
+
+#nameError.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+  color: red;
+}
+
 /* Footer */
 
 footer {

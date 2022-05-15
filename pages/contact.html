@@ -123,8 +123,6 @@
                      type="text"
                      placeholder=" "
                      pattern="[A-Za-z].{2,}"
-                     title="OIIII"
-                     required
                   />
                   <div class="cut"></div>
                   <label for="firstname" class="placeholder-form">Nome</label>
@@ -163,7 +161,8 @@
                      Desejo receber emails diariamente
                   </div>
                </div>
-               <button type="text" class="submit">Assinar!</button>
+               <span role="alert" id="nameError" aria-hidden="true">Por favor, informe um nome</span>
+               <button id="submit" type="text" class="submit">Assinar!</button>
             </form>
          </div>
       </div>
