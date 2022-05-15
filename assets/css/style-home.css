@@ -115,7 +115,8 @@ nav ul li a {
 	padding: 0;
 }
 
-.dropdown {
+.dropdown,
+.list-dropdown {
 	display: none;
 	height: 100%;
 }
@@ -231,6 +232,7 @@ nav ul li a {
 	padding: 5% 0;
 	border-top: 2px solid #ffffff;
 	background-image: url("../img/parallax_img/smoke.png");
+	box-shadow: 0 0 0.5rem #fff;
 }
 
 #tour {
@@ -423,6 +425,8 @@ nav ul li a {
 	height: fit-content;
 	position: relative;
 	background-image: url("../img/parallax_img/smoke.png");
+	border-bottom: 2px solid #fff ;
+  box-shadow: 0 0 0.5rem white;
 }
 
 .upcoming-shows-table {
@@ -572,10 +576,6 @@ nav ul li a {
 }
 
 /* Footer */
-
-footer {
-	border-top: 2px solid white;
-}
 
 .logo-footer {
 	width: 15rem;
@@ -758,7 +758,8 @@ footer .link-sections {
 		display: none;
 	}
 
-	.dropdown {
+	.dropdown,
+	.list-dropdown {
 		display: block;
 	}
 
