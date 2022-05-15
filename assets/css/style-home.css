@@ -203,20 +203,24 @@ nav ul li a {
 }
 
 /* Carousel */
+
 .nome-banda {
 	text-align: center;
 	margin-bottom: 1rem;
 }
-.nome-banda img{
+
+.nome-banda img {
 	width: 50%;
-	height:50%;
+	height: 50%;
 }
-.nome-banda h1{
+
+.nome-banda h1 {
 	text-align: center;
 	color: #fff;
 	margin: auto;
 	font-family: 'Special Elite', cursive;
 }
+
 .containerSlider {
 	position: relative;
 	display: flex;
@@ -227,6 +231,10 @@ nav ul li a {
 	padding: 5% 0;
 	border-top: 2px solid #ffffff;
 	background-image: url("../img/parallax_img/smoke.png");
+}
+
+#tour {
+	padding-top: 2rem;
 }
 
 .containerSlider h2 {
@@ -712,12 +720,13 @@ footer .link-sections {
 	.logo-separate img {
 		height: 3rem;
 	}
+
 	.social-links .post {
 		padding: 1rem 1rem;
 		width: 100%;
 		height: auto;
 	}
-	
+
 
 }
 
@@ -761,6 +770,7 @@ footer .link-sections {
 	nav ul {
 		gap: 0;
 	}
+
 	.social-links article .time {
 		font-size: 10px;
 		text-align: end;
